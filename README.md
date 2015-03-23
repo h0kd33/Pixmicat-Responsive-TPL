@@ -1,15 +1,15 @@
-Pixmicat! Imageboard System, The Responsive template
+Pixmicat! Imageboard System, The Responsive Template
 ========
 
 What is this?
 -------------
 
-It's a「Responsive template」for Pixmicat! Imageboard System
+Responsive template for Pixmicat! Imageboard System
 
 Requirements
 ------------
 
-- Pixmicat!-PIO 8th.Release.3 or above
+Pixmicat!-PIO 8th.Release.3 or above
 
 Resources
 ---------
