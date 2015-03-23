@@ -1,6 +1,6 @@
 <!--&THEMENAME-->Pixmicat_Responsive<!--/&THEMENAME-->
 <!--&THEMEVER-->150317<!--/&THEMEVER-->
-<!--&THEMEAUTHOR-->Suzhou<!--/&THEMEAUTHOR-->
+<!--&THEMEAUTHOR-->Suzhou65<!--/&THEMEAUTHOR-->
 <!--&HEADER--><!DOCTYPE html>
 <html lang="zh-TW"><head>
 <meta charset="utf-8">
@@ -8,7 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 <title>{$TITLE}</title>
 <script type="text/javascript" async src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<style type="text/css">
+    
+    <!--將 mainstyle.css 導入 inc_pixmicat.tpl，讓轉譯速度加快-->
+    <!--所有的欄位、字型代號均保持 Pixmicat 預設，除增加用於放置廣告的 #AD 欄位-->
+    <style type="text/css">
+    <!--當裝置橫向解析度大於 720px，保持正常版型-->
     @media all{
 	html{
     background:#FFFFEF;color:#800000;font-family: sans-serif;}
@@ -45,11 +49,13 @@
 	.ListRow1_bg{background:#D6D6F6}
 	.ListRow2_bg{background:#F6F6F6}
     }
+    <!--Google AdSense 廣告欄位最適當寬度為 728px，此為置中語法-->
     @media only screen and (min-width:728px){
     #AD{margin:0px auto;}
     }
+    <!--當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px-->
     @media only screen and (max-width:720px){
-    html{font-size:0.9em;padding:0px;background:#FFE;color:#800000;font-family:sans-serif;min-width:320px}
+    html{font-size:0.9em;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px}
 	#toplink{display:none}
     #fupfile{display:block}
     #header{margin:0px auto;}
