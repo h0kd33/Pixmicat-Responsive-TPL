@@ -11,75 +11,80 @@
 <!--將 mainstyle.css 導入 inc_pixmicat.tpl，讓轉譯速度加快-->
 <!--所有的欄位、字型代號均保持 Pixmicat 預設，除增加用於放置廣告的 #AD 欄位-->
 
-    <style type="text/css">
-
-<!--當裝置橫向解析度大於 720px，保持正常版型-->
+<style type="text/css">
+/*當裝置橫向解析度大於 720px，保持正常版型*/
 @media all{
-    html{background:#FFFFEF;color:#800000;font-family: sans-serif;}
-    #postinfo{font-size:0.8em} 
-    #toplink{text-align:right}
-    #footer{margin:0px auto;}
-    form{padding:0;margin:0}
-    a{color:#0921EA;text-decoration:none;font-family:sans-serif;}
-    small{font-size:0.8em}
-    hr{clear:left}
-    img{border:0}
-    h1{color:#800000;text-align:center;margin:0 auto;}
-    hr.top{width:90%;height:1px;}
-    .Form_bg{background:#EA8}
-    .hide_btn{float:right;width:4em;height:1.25em;overflow:hidden;text-align:center;background:#F0E0D6;}
+
+    html{background:#FFFFEF;color:#800000;font-family: sans-serif;} /*基本網頁背景樣式*/
+    a{color:#0921EA;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
+    small{font-size:0.8em} /*小字樣式*/
+	.admin_cap{color:#0000FF} /*管理者名稱樣式*/
+	.nor{font-weight:normal} /*TRIP 取消時粗體*/
+	.resquote{color:#789922} /*標註引用顏色*/
+    img{border:0} /*圖片顯示樣式*/
+    hr{clear:left} /*分隔線樣式*/
+    
+    #toplink{text-align:right} /*頂部連結位置*/
+    h1{color:#800000;text-align:center;margin:0 auto;}/*版面標題樣式*/
+    #AD{margin:0px auto;} /*廣告欄位置中語法，廣告建議使用 Google AdSense 的 Responsive 模式*/
+    hr.top{width:90%;height:1px;} /*版面標題下方分隔線樣式*/
+    
+    .hide_btn{float:right;width:4em;height:1.25em;overflow:hidden;text-align:center;background:#F0E0D6;} /*隱藏投稿按鈕樣式*/
+    .Form_bg{background:#EA8} /*投稿左方說明欄位底色*/
     .show{color:#0921EA}
 	.hide{display:none}
-	.threadpost{ }
-	.reply{display:table;margin:0.5ex 1em 0 1em;background:#F0E0D6;}
-	.replywrap{display:table-cell}
-	.reply_hl{background: #F0D5B7}
-	.name{color:#117743;font-weight:bold;}
-	.admin_cap{color:#0000FF}
-	.img {float:left;margin:1ex 2ex;} 
-	.title{color:#CC1105;font-size:1.125em;font-weight:bold;}
-	.nor{font-weight:normal}
-	.quote{word-wrap:break-word;word-break:break-all;margin:1em 2em}
-	.resquote{color:#789922}
-	.category{font-size:0.8em;color:gray;}
-	.warn_txt{color:#F00000;font-weight:bold;}
-	.warn_txt2{color:#707070}
-	.bar_reply{background:#E04000;color:#FFF;font-weight:bold;text-align:center;}
-	.bar_admin{background:#E08000;color:#FFF;font-weight:bold;text-align:center;}
-	.ListRow1_bg{background:#D6D6F6}
-	.ListRow2_bg{background:#F6F6F6}
-    }
+    #postinfo{font-size:0.8em} /*上傳說明樣式*/
+    
+    form{padding:0;margin:0} /*討論串樣式，修正表單標籤造成的排版問題*/
+    .category{font-size:0.8em;color:gray;} /*討論串類別標籤顯示樣式*/
+    .threadpost{ } /*討論串首篇樣式*/
+	.reply{display:table;margin:0.5ex 1em 0 1em;background:#F0E0D6;} /*討論串回應樣式*/
+	.replywrap{display:table-cell} /*解決 IE8+ 無法選取討論串回應內文用*/
+	.reply_hl{background:#F0D5B7} /*在討論串選取回應時，被選取之回應標亮*/
+    .img {float:left;margin:1ex 2ex;} /*討論串圖片顯示樣式*/
+	.title{color:#CC1105;font-size:1.125em;font-weight:bold;} /*討論串標題樣式*/
+	.name{color:#117743;font-weight:bold;} /*文章投稿者名稱樣式*/
+	.quote{word-wrap:break-word;word-break:break-all;margin:1em 2em} /*討論串內文縮排樣式*/    
+    .warn_txt2{color:#707070} /*討論串狀態提示文字樣式*/
+	.warn_txt{color:#F00000;font-weight:bold;} /*討論串警告文字樣式*/
+	.bar_reply{background:#E04000;color:#FFF;font-weight:bold;text-align:center;} /*討論串回應模式樣式標題列*/
 
-<!--Google AdSense 廣告欄位最適當寬度為 728px，此為置中語法-->
-@media only screen and (min-width:728px){
-    #AD{margin:0px auto;}
-    }
+	.bar_admin{background:#E08000;color:#FFF;font-weight:bold;text-align:center;} /*管理模式樣式標題列*/
+	.ListRow1_bg{background:#D6D6F6} /*管理模式欄位背景顏色*/
+	.ListRow2_bg{background:#F6F6F6} /*管理模式欄位背景顏色*/
 
-<!--當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px-->
+    #footer{margin:0px auto;} /*底部欄位位置*/
+}
+/*當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px*/
 @media only screen and (max-width:720px){
-    html{font-size:0.9em;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px}
-	#toplink{display:none}
-    #fupfile{display:block}
-    #header{margin:0px auto;}
-    #footer{margin:0px auto;}
-    #fcom{max-width:200px}
-    #AD{max-width:100%;margin:0px auto;}
-    #page_switch{clear:center}
-    form{max-width:100%}
-	input[type="text"]{max-width:90%}
-	ul{padding-left:0.9em}
-    a{font-size:0.9em;color:#00E;text-decoration:none;font-family:sans-serif;}
-    small{font-size:0.9em}
-	h1{font-size:0.9em;color:#800000;text-align:center;margin:0 auto;}
-    hr{clear:both;max-width:98%;}
-	img{border:0}
-	.img{margin:0.5ex 0.5ex;max-width:100%;height:auto;display:block;float:none;}
+
+    html{font-size:0.9em;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
+    a{font-size:0.9em;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
+    small{font-size:0.9em} /*小字樣式*/
+    hr{clear:both;max-width:98%;} /*分隔線樣式*/
+	img{border:0} /*圖片顯示樣式*/
+    .resquote{font-size:0.9em;color:#789922}
+
+    #header{margin:0px auto;} /*頂部欄位定義*/
+    #toplink{display:none} /*隱藏頂部連結*/
+    h1{font-size:0.9em;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
+    #AD{max-width:100%;margin:0px auto;} /*廣告欄位置中語法，廣告建議使用 Google AdSense 的 Responsive 模式*/
+    
+	.Form_bg{background:#EA8;min-width:32px;} /*投稿左方說明欄位底色，與大小定義*/
+    form{max-width:100%} /*投稿框架定義*/
+	input[type="text"]{max-width:90%} /*投稿文字框定義*/
+    #fcom{min-width:1500px}  /*投稿文字框定義*/
+    #fupfile{display:block} /*投稿檔案框定義*/
+    ul{padding-left:0.9em} /*上傳說明樣式*/
+
 	.reply{clear:left;margin:0.5ex 0 0 0; max-width:100%;}
 	.replywrap{clear:left;margin:0.5ex 0 0 0; max-width:100%;}
-    .resquote{font-size:0.9em;color:#789922}
+    .img{margin:0.5ex 0.5ex;max-width:100%;height:auto;display:block;float:none;} /*討論串圖片顯示樣式*/
 	.quote{word-wrap:break-word;word-break:break-all;margin:5px 10px}
 	.pushpost{padding:0.9em}
-	.Form_bg{background:#EA8;min-width:32px;}
+    
+    #footer{margin:0px auto;} /*底部欄位位置*/
+    #page_switch{clear:center} /*底部頁碼切換*/
     }
 </style>
 <!--/&HEADER-->
@@ -105,7 +110,7 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <br />
 <h1>{$TITLE}</h1>
 <div id="AD" align="center">
-<!--廣告程式碼-->
+<!--頂部廣告程式碼插入位置-->
 </div>
 <hr/></div>
 <!--/&BODYHEAD-->
@@ -113,9 +118,9 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <form action="{$SELF}" method="post" enctype="multipart/form-data" onsubmit="return c();" id="postform_main">
 <div id="postform">
 <!--&IF($FORMTOP,'{$FORMTOP}','')-->
-<input type="hidden" name="mode" value="{$MODE}" />
-<input type="hidden" name="MAX_FILE_SIZE" value="{$MAX_FILE_SIZE}" />
-<input type="hidden" name="upfile_path" value="" />
+<input type="hidden" name="mode" value="{$MODE}"/>
+<input type="hidden" name="MAX_FILE_SIZE" value="{$MAX_FILE_SIZE}"/>
+<input type="hidden" name="upfile_path" value=""/>
 <!--&IF($RESTO,'{$RESTO}','')-->
 <div style="text-align: center;">
 <table id="postform_tbl" style="padding: 10px;border-spacing; 10px; margin: 0px auto; text-align: left;">
@@ -150,10 +155,10 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <!--&FOOTER-->
 <div id="footer" align="center">
 <div id="AD" align="center">
-<!--廣告程式碼-->
+<!--底部廣告程式碼插入位置-->
 </div>
 <script type="text/javascript">preset();</script>
-<!--GoogleAnalytics程式碼-->
+<!--GoogleAnalytics 程式碼插入位置-->
 </br>
 {$FOOTER}
 </div>
@@ -194,10 +199,10 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <!--&REALSEPARATE/-->
 <!--/&SEARCHRESULT-->
 <!--&THREADSEPARATE-->
-<hr />
+<hr/>
 <!--/&THREADSEPARATE-->
 <!--&REALSEPARATE-->
-<hr />
+<hr/>
 <!--/&REALSEPARATE-->
 <!--&DELFORM-->
 <div id="del">
