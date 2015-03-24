@@ -1,5 +1,5 @@
 <!--&THEMENAME-->Pixmicat_Responsive<!--/&THEMENAME-->
-<!--&THEMEVER-->150317<!--/&THEMEVER-->
+<!--&THEMEVER-->150324<!--/&THEMEVER-->
 <!--&THEMEAUTHOR-->Suzhou65<!--/&THEMEAUTHOR-->
 <!--&HEADER--><!DOCTYPE html>
 <html lang="zh-TW"><head>
@@ -58,30 +58,30 @@
 /*當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px*/
 @media only screen and (max-width:720px){
 
-    html{font-size:0.9em;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
-    a{font-size:0.9em;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
-    small{font-size:0.9em} /*小字樣式*/
+    html{font-size:12px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
+    a{font-size:12px;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
+    small{font-size:10px} /*小字樣式*/
     hr{clear:both;max-width:98%;} /*分隔線樣式*/
 	img{border:0} /*圖片顯示樣式*/
-    .resquote{font-size:0.9em;color:#789922}
+    .resquote{font-size:9px;color:#789922}
 
     #header{margin:0px auto;} /*頂部欄位定義*/
     #toplink{display:none} /*隱藏頂部連結*/
-    h1{font-size:0.9em;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
+    h1{font-size:14px;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
     #AD{max-width:100%;margin:0px auto;} /*廣告欄位置中語法，廣告建議使用 Google AdSense 的 Responsive 模式*/
     
 	.Form_bg{background:#EA8;min-width:32px;} /*投稿左方說明欄位底色，與大小定義*/
     form{max-width:100%} /*投稿框架定義*/
 	input[type="text"]{max-width:90%} /*投稿文字框定義*/
-    #fcom{min-width:1500px}  /*投稿文字框定義*/
+    #fcom{max-width:200px}  /*投稿文字框定義*/
     #fupfile{display:block} /*投稿檔案框定義*/
-    ul{padding-left:0.9em} /*上傳說明樣式*/
+    ul{padding-left:11px} /*上傳說明樣式*/
 
-	.reply{clear:left;margin:0.5ex 0 0 0; max-width:100%;}
-	.replywrap{clear:left;margin:0.5ex 0 0 0; max-width:100%;}
-    .img{margin:0.5ex 0.5ex;max-width:100%;height:auto;display:block;float:none;} /*討論串圖片顯示樣式*/
-	.quote{word-wrap:break-word;word-break:break-all;margin:5px 10px}
-	.pushpost{padding:0.9em}
+	.reply{clear:left;margin:0.5ex 0 0 0; max-width:100%;} /*討論串回應樣式*/
+	.replywrap{clear:left;margin:0.5ex 0 0 0; max-width:100%;} /*解決 IE8+ 無法選取討論串回應內文用*/
+    .img{margin:5px;max-width:100%;height:auto;display:block;float:left;} /*討論串圖片顯示樣式*/
+	.quote{word-wrap:break-word;word-break:break-all;margin:5px 10px} /*討論串內文縮排樣式*/  
+	.pushpost{padding:11px} /*推文定義*/
     
     #footer{margin:0px auto;} /*底部欄位位置*/
     #page_switch{clear:center} /*底部頁碼切換*/
