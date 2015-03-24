@@ -7,28 +7,28 @@
 <meta name="robots" content="index, follow"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 <title>{$TITLE}</title>
-<script type="text/javascript" async src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
-    <!--將 mainstyle.css 導入 inc_pixmicat.tpl，讓轉譯速度加快-->
-    <!--所有的欄位、字型代號均保持 Pixmicat 預設，除增加用於放置廣告的 #AD 欄位-->
+<script type="text/javascript" async src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+<!--將 mainstyle.css 導入 inc_pixmicat.tpl，讓轉譯速度加快-->
+<!--所有的欄位、字型代號均保持 Pixmicat 預設，除增加用於放置廣告的 #AD 欄位-->
+
     <style type="text/css">
-    <!--當裝置橫向解析度大於 720px，保持正常版型-->
-    @media all{
-	html{
-    background:#FFFFEF;color:#800000;font-family: sans-serif;}
-	#postinfo{font-size:0.8em} 
+
+<!--當裝置橫向解析度大於 720px，保持正常版型-->
+@media all{
+    html{background:#FFFFEF;color:#800000;font-family: sans-serif;}
+    #postinfo{font-size:0.8em} 
     #toplink{text-align:right}
     #footer{margin:0px auto;}
     form{padding:0;margin:0}
     a{color:#0921EA;text-decoration:none;font-family:sans-serif;}
-	small{font-size:0.8em}
-	hr{clear:left}
-	img{border:0}
-	h1{color:#800000;text-align:center;margin:0 auto;}
-	hr.top{width:90%;height:1px;}
-	.Form_bg{background:#EA8}
-	.hide_btn{float:right;width:4em;height:1.25em;overflow:hidden;text-align:center;background:#F0E0D6;}
-	.show{color:#0921EA}
+    small{font-size:0.8em}
+    hr{clear:left}
+    img{border:0}
+    h1{color:#800000;text-align:center;margin:0 auto;}
+    hr.top{width:90%;height:1px;}
+    .Form_bg{background:#EA8}
+    .hide_btn{float:right;width:4em;height:1.25em;overflow:hidden;text-align:center;background:#F0E0D6;}
+    .show{color:#0921EA}
 	.hide{display:none}
 	.threadpost{ }
 	.reply{display:table;margin:0.5ex 1em 0 1em;background:#F0E0D6;}
@@ -49,12 +49,14 @@
 	.ListRow1_bg{background:#D6D6F6}
 	.ListRow2_bg{background:#F6F6F6}
     }
-    <!--Google AdSense 廣告欄位最適當寬度為 728px，此為置中語法-->
-    @media only screen and (min-width:728px){
+
+<!--Google AdSense 廣告欄位最適當寬度為 728px，此為置中語法-->
+@media only screen and (min-width:728px){
     #AD{margin:0px auto;}
     }
-    <!--當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px-->
-    @media only screen and (max-width:720px){
+
+<!--當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px-->
+@media only screen and (max-width:720px){
     html{font-size:0.9em;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px}
 	#toplink{display:none}
     #fupfile{display:block}

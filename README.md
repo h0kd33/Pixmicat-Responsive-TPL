@@ -1,5 +1,8 @@
 Pixmicat! Imageboard System, The Responsive Template
 ========
+![ScreenShot](http://i.imgur.com/YeYShMs.png)
+![ScreenShot](http://i.imgur.com/q1zQx7A.png)
+![ScreenShot](http://i.imgur.com/AtZoIo4.png)
 
 What is this?
 -------------
