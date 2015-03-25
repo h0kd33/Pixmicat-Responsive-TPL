@@ -1,5 +1,5 @@
 <!--&THEMENAME-->Pixmicat_Responsive<!--/&THEMENAME-->
-<!--&THEMEVER-->150324<!--/&THEMEVER-->
+<!--&THEMEVER-->150325<!--/&THEMEVER-->
 <!--&THEMEAUTHOR-->Suzhou65<!--/&THEMEAUTHOR-->
 <!--&HEADER--><!DOCTYPE html>
 <html lang="zh-TW"><head>
@@ -7,12 +7,11 @@
 <meta name="robots" content="index, follow"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 <title>{$TITLE}</title>
-<script type="text/javascript" async src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
-<!--將 mainstyle.css 導入 inc_pixmicat.tpl，讓轉譯速度加快-->
-<!--所有的欄位、字型代號均保持 Pixmicat 預設，除增加用於放置廣告的 #AD 欄位-->
-
+<script type="text/javascript" async src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
 <style type="text/css">
+/*將 mainstyle.css 導入 inc_pixmicat.tpl，讓轉譯速度加快*/
 /*當裝置橫向解析度大於 720px，保持正常版型*/
+/*基本上所有框架定義都是原來 Pixmicat 預設的，僅有新增廣告欄位的 #AD 與提供討論串清單的 #topiclist 而已*/
 @media all{
 
     html{background:#FFFFEF;color:#800000;font-family: sans-serif;} /*基本網頁背景樣式*/
@@ -30,12 +29,13 @@
     hr.top{width:90%;height:1px;} /*版面標題下方分隔線樣式*/
     
     .hide_btn{float:right;width:4em;height:1.25em;overflow:hidden;text-align:center;background:#F0E0D6;} /*隱藏投稿按鈕樣式*/
-    .Form_bg{background:#EA8} /*投稿左方說明欄位底色*/
+    .Form_bg{background:#EEAA88} /*投稿左方說明欄位底色*/
     .show{color:#0921EA}
 	.hide{display:none}
     #postinfo{font-size:0.8em} /*上傳說明樣式*/
     
     form{padding:0;margin:0} /*討論串樣式，修正表單標籤造成的排版問題*/
+    #topiclist{margin:0px auto;} /*討論串清單樣式，安裝主題清單列表模組時使用*/
     .category{font-size:0.8em;color:gray;} /*討論串類別標籤顯示樣式*/
     .threadpost{ } /*討論串首篇樣式*/
 	.reply{display:table;margin:0.5ex 1em 0 1em;background:#F0E0D6;} /*討論串回應樣式*/
@@ -47,20 +47,20 @@
 	.quote{word-wrap:break-word;word-break:break-all;margin:1em 2em} /*討論串內文縮排樣式*/    
     .warn_txt2{color:#707070} /*討論串狀態提示文字樣式*/
 	.warn_txt{color:#F00000;font-weight:bold;} /*討論串警告文字樣式*/
-	.bar_reply{background:#E04000;color:#FFF;font-weight:bold;text-align:center;} /*討論串回應模式樣式標題列*/
+	.bar_reply{background:#E04000;color:#FFFFFF;font-weight:bold;text-align:center;} /*討論串回應模式樣式標題列*/
 
-	.bar_admin{background:#E08000;color:#FFF;font-weight:bold;text-align:center;} /*管理模式樣式標題列*/
-	.ListRow1_bg{background:#D6D6F6} /*管理模式欄位背景顏色*/
-	.ListRow2_bg{background:#F6F6F6} /*管理模式欄位背景顏色*/
+	.bar_admin{background:#E08000;color:#FFFFFF;font-weight:bold;text-align:center;} /*管理模式樣式標題列*/
+	.ListRow1_bg{background:#D6D6F6} /*管理模式欄位背景顏色，交互出現用*/
+	.ListRow2_bg{background:#F6F6F6} /*管理模式欄位背景顏色，交互出現用*/
 
     #footer{margin:0px auto;} /*底部欄位位置*/
 }
 /*當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px*/
 @media only screen and (max-width:720px){
 
-    html{font-size:12px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
-    a{font-size:12px;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
-    small{font-size:10px} /*小字樣式*/
+    html{font-size:14px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
+    a{font-size:14px;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
+    small{font-size:13px} /*小字樣式*/
     hr{clear:both;max-width:98%;} /*分隔線樣式*/
 	img{border:0} /*圖片顯示樣式*/
     .resquote{font-size:9px;color:#789922}
@@ -70,18 +70,19 @@
     h1{font-size:14px;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
     #AD{max-width:100%;margin:0px auto;} /*廣告欄位置中語法，廣告建議使用 Google AdSense 的 Responsive 模式*/
     
-	.Form_bg{background:#EA8;min-width:32px;} /*投稿左方說明欄位底色，與大小定義*/
+	.Form_bg{background:#EEAA88;min-width:32px;} /*投稿左方說明欄位底色，與大小定義*/
     form{max-width:100%} /*投稿框架定義*/
 	input[type="text"]{max-width:90%} /*投稿文字框定義*/
     #fcom{max-width:200px}  /*投稿文字框定義*/
     #fupfile{display:block} /*投稿檔案框定義*/
-    ul{padding-left:11px} /*上傳說明樣式*/
+    ul{padding-left:13px} /*上傳說明樣式*/
 
-	.reply{clear:left;margin:0.5ex 0 0 0; max-width:100%;} /*討論串回應樣式*/
-	.replywrap{clear:left;margin:0.5ex 0 0 0; max-width:100%;} /*解決 IE8+ 無法選取討論串回應內文用*/
+    #topiclist{display:none} /*行動版 隱藏討論串清單，討論串清單樣式，安裝主題清單列表模組時使用*/
+	.reply{clear:left;margin:0.5ex 0 0 0; max-width:97%;} /*討論串回應樣式*/
+	.replywrap{clear:left;margin:0.5ex 0 0 0; max-width:97%;} /*解決 IE8+ 無法選取討論串回應內文用*/
     .img{margin:5px;max-width:100%;height:auto;display:block;float:left;} /*討論串圖片顯示樣式*/
-	.quote{word-wrap:break-word;word-break:break-all;margin:5px 10px} /*討論串內文縮排樣式*/  
-	.pushpost{padding:11px} /*推文定義*/
+	.quote{word-wrap:break-word;word-break:break-all;margin:2px 2px} /*討論串內文縮排樣式*/  
+	.pushpost{padding:13px} /*推文定義*/
     
     #footer{margin:0px auto;} /*底部欄位位置*/
     #page_switch{clear:center} /*底部頁碼切換*/
