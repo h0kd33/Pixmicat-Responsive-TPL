@@ -53,7 +53,7 @@
     small{font-size:13px} /*小字樣式*/
     hr{clear:both;max-width:98%;} /*分隔線樣式*/
 	img{border:0} /*圖片顯示樣式*/
-    .resquote{font-size:9px;color:#789922}
+    .resquote{font-size:14px;color:#789922}
 
     #header{margin:0px auto;} /*頂部欄位定義*/
     #toplink{display:none} /*隱藏頂部連結*/
