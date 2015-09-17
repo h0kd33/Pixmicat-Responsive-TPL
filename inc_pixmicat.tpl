@@ -169,7 +169,7 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <!--&ERROR-->
 <div id="error">
 <div style="text-align: center; font-size: 1.125rem; font-weight: bold;">
-<span style="color: red;">{$MESG}</span><p />
+<span style="color:#CC1105;">{$MESG}</span><p />
 <a href="{$SELF2}">{$RETURN_TEXT}</a>　<a href="javascript:history.back();">{$BACK_TEXT}</a>
 </div>
 <hr/>
