@@ -1,5 +1,5 @@
 <!--&THEMENAME-->Pixmicat_Responsive<!--/&THEMENAME-->
-<!--&THEMEVER-->150325<!--/&THEMEVER-->
+<!--&THEMEVER-->1500917<!--/&THEMEVER-->
 <!--&THEMEAUTHOR-->Suzhou65<!--/&THEMEAUTHOR-->
 <!--&HEADER--><!DOCTYPE html>
 <html lang="zh-TW"><head>
@@ -58,15 +58,15 @@
 /*當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px*/
 @media only screen and (max-width:720px){
 
-    html{font-size:14px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
-    a{font-size:14px;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
-    small{font-size:13px} /*小字樣式*/
+    html{font-size:15px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
+    a{font-size:15px;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
+    small{font-size:15px} /*小字樣式*/
     hr{clear:both;max-width:98%;} /*分隔線樣式*/
 	img{border:0} /*圖片顯示樣式*/
     .resquote{font-size:14px;color:#789922}
 
     #header{margin:0px auto;} /*頂部欄位定義*/
-    #toplink{display:none} /*隱藏頂部連結*/
+    #toplink{text-align:right;position:fixed;background:#FFFFEF;} /*頂部連結鎖定*/
     h1{font-size:14px;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
     #AD{max-width:100%;margin:0px auto;} /*廣告欄位置中語法，廣告建議使用 Google AdSense 的 Responsive 模式*/
     
@@ -75,7 +75,7 @@
 	input[type="text"]{max-width:90%} /*投稿文字框定義*/
     #fcom{max-width:200px}  /*投稿文字框定義*/
     #fupfile{display:block} /*投稿檔案框定義*/
-    ul{padding-left:13px} /*上傳說明樣式*/
+    ul{padding-left:15px} /*上傳說明樣式*/
 
     #topiclist{display:none} /*行動版 隱藏討論串清單，討論串清單樣式，安裝主題清單列表模組時使用*/
 	.reply{clear:left;margin:0.5ex 0 0 0; max-width:97%;} /*討論串回應樣式*/
@@ -101,7 +101,7 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <!--/&JSHEADER-->
 <!--&TOPLINKS-->
 <div id="toplink">
-{$HOME} {$SEARCH} {$HOOKLINKS} {$TOP_LINKS} {$STATUS} {$ADMIN} {$REFRESH}
+{$HOME} {$SEARCH} {$STATUS} {$ADMIN} {$REFRESH}
 </div>
 <!--/&TOPLINKS-->
 <!--&BODYHEAD-->
