@@ -14,9 +14,9 @@
 /*基本上所有框架定義都是原來 Pixmicat 預設的，僅有新增廣告欄位的 #AD 與提供討論串清單的 #topiclist 而已*/
 @media all{
 
-    html{background:#FFFFEF;color:#800000;font-family: sans-serif;} /*基本網頁背景樣式*/
+    html{background:#FFFFEF;color:#800000;font-family:sans-serif;font-size:100%;} /*基本網頁背景樣式，預設字體大小16px*/
     a{color:#0921EA;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
-    small{font-size:0.8em} /*小字樣式*/
+    small{font-size:0.8rem} /*小字樣式*/
 	.admin_cap{color:#0000FF} /*管理者名稱樣式*/
 	.nor{font-weight:normal} /*TRIP 取消時粗體*/
 	.resquote{color:#789922} /*標註引用顏色*/
@@ -32,17 +32,17 @@
     .Form_bg{background:#EEAA88} /*投稿左方說明欄位底色*/
     .show{color:#0921EA}
 	.hide{display:none}
-    #postinfo{font-size:0.8em} /*上傳說明樣式*/
+    #postinfo{font-size:0.8rem} /*上傳說明樣式*/
     
     form{padding:0;margin:0} /*討論串樣式，修正表單標籤造成的排版問題*/
     #topiclist{margin:0px auto;} /*討論串清單樣式，安裝主題清單列表模組時使用*/
-    .category{font-size:0.8em;color:gray;} /*討論串類別標籤顯示樣式*/
+    .category{font-size:0.8rem;color:gray;} /*討論串類別標籤顯示樣式*/
     .threadpost{ } /*討論串首篇樣式*/
 	.reply{display:table;margin:0.5ex 1em 0 1em;background:#F0E0D6;} /*討論串回應樣式*/
 	.replywrap{display:table-cell} /*解決 IE8+ 無法選取討論串回應內文用*/
 	.reply_hl{background:#F0D5B7} /*在討論串選取回應時，被選取之回應標亮*/
     .img {float:left;margin:1ex 2ex;} /*討論串圖片顯示樣式*/
-	.title{color:#CC1105;font-size:1.125em;font-weight:bold;} /*討論串標題樣式*/
+	.title{color:#CC1105;font-size:1.125rem;font-weight:bold;} /*討論串標題樣式*/
 	.name{color:#117743;font-weight:bold;} /*文章投稿者名稱樣式*/
 	.quote{word-wrap:break-word;word-break:break-all;margin:1em 2em} /*討論串內文縮排樣式*/    
     .warn_txt2{color:#707070} /*討論串狀態提示文字樣式*/
@@ -58,16 +58,16 @@
 /*當裝置橫向解析度低於 720px，切換為行動版，而行動版最低解析度為 320px*/
 @media only screen and (max-width:720px){
 
-    html{font-size:15px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式*/
-    a{font-size:15px;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
-    small{font-size:15px} /*小字樣式*/
+    html{font-size:12px;padding:0px;background:#FFFFEF;color:#800000;font-family:sans-serif;min-width:320px} /*基本網頁背景樣式，預設字體大小12px*/
+    a{font-size:0.917rem;color:#00E;text-decoration:none;font-family:sans-serif;} /*超連結樣式*/
+    small{font-size:0.917rem} /*小字樣式*/
     hr{clear:both;max-width:98%;} /*分隔線樣式*/
 	img{border:0} /*圖片顯示樣式*/
-    .resquote{font-size:14px;color:#789922}
+    .resquote{font-size:0.917rem;color:#789922}
 
     #header{margin:0px auto;} /*頂部欄位定義*/
     #toplink{text-align:right;position:fixed;background:#FFFFEF;} /*頂部連結鎖定*/
-    h1{font-size:14px;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
+    h1{font-size:1.250rem;color:#800000;text-align:center;margin:0 auto;} /*版面標題樣式*/
     #AD{max-width:100%;margin:0px auto;} /*廣告欄位置中語法，廣告建議使用 Google AdSense 的 Responsive 模式*/
     
 	.Form_bg{background:#EEAA88;min-width:32px;} /*投稿左方說明欄位底色，與大小定義*/
@@ -100,9 +100,9 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <!--[if lt IE 8]><script type="text/javascript" src="iedivfix.js"></script><![endif]-->
 <!--/&JSHEADER-->
 <!--&TOPLINKS-->
-<div id="toplink">
+<div id="toplink"><span style="font-size:1.125rem;">
 {$HOME} {$SEARCH} {$STATUS} {$ADMIN} {$REFRESH}
-</div>
+</span></div>
 <!--/&TOPLINKS-->
 <!--&BODYHEAD-->
 <body>
@@ -168,7 +168,7 @@ var ext="{$ALLOW_UPLOAD_EXT}".toUpperCase().split("|");
 <!--/&FOOTER-->
 <!--&ERROR-->
 <div id="error">
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">
+<div style="text-align: center; font-size: 1.125rem; font-weight: bold;">
 <span style="color: red;">{$MESG}</span><p />
 <a href="{$SELF2}">{$RETURN_TEXT}</a>　<a href="javascript:history.back();">{$BACK_TEXT}</a>
 </div>
