@@ -12,10 +12,13 @@ Pixmicat!-PIO 8th.Release.3 or above
 Pixmicat! css font definition
 ---------
 ![ScreenShot](http://i.imgur.com/YeYShMs.png)
-
 ![ScreenShot](http://i.imgur.com/q1zQx7A.png)
-
 ![ScreenShot](http://i.imgur.com/AtZoIo4.png)
+
+Pixmicat! css color definition
+---------
+![ScreenShot](./Exp_PC.png)
+![ScreenShot](./Exp_CS.png)
 
 Resources
 ---------
