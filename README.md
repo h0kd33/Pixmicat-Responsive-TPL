@@ -9,19 +9,20 @@ Requirements
 ------------
 Pixmicat!-PIO 8th.Release.3 or above
 
-Pixmicat! css font definition
+Pixmicat! Default CSS Font/Div Definition
 ---------
-![ScreenShot](http://i.imgur.com/YeYShMs.png)
-![ScreenShot](http://i.imgur.com/q1zQx7A.png)
-![ScreenShot](http://i.imgur.com/AtZoIo4.png)
+![ScreenShot](./src/Exp_Pixmicat_Top.png)
+![ScreenShot](./src/Exp_Pixmicat_Main.png)
+![ScreenShot](./src/Exp_Pixmicat_Bottom.png)
 
-Pixmicat! css color definition
+Pixmicat! Css Color Definition
 ---------
-![ScreenShot](./Exp_PC.png)
-![ScreenShot](./Exp_CS.png)
+![ScreenShot](./src/Exp_Color_Design.png)  
+  
+![ScreenShot](./src/Exp_Pixmicat_Color_Change.png)  
 
 Resources
 ---------
 - Pixmicat in GitHub: https://github.com/scribetw/pixmicat/
-- Responsive template Demo http://jormungandr.info/testing/ （Zh-TW）
-- Personal Site: http://takahashi65.blogspot.tw/2014/12/pixmicat.html （Zh-TW）
+- Responsive template Demo https://jormungandr.info/testing/ （Zh-TW）
+- Personal Site: https://takahashi65.blogspot.tw/2014/12/pixmicat.html （Zh-TW）
